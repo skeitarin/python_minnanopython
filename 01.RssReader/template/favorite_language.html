@@ -1,0 +1,12 @@
+<html>
+    <head>
+      <meta http-equiv="content-type"
+            content="text/html;charset=utf-8" />
+    </head>
+    <body>
+      $for item in languages:
+      <input type="radio" name="language" value="${item[0]}" />${item[0]}
+      <div style="border-left: solid ${item[1]}em red">${item[1]}</div>
+      $endfor
+    </body>
+  </html>
